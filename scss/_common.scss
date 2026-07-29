@@ -1,0 +1,151 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    // font-weight: 600;
+    // font-style: normal;
+    background-image: url(../img/bg.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    font-size: 16px;
+
+    .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+
+        img {
+            max-width: 100%;
+        }
+
+
+        ul {
+            li {
+                list-style: none;
+            }
+        }
+
+        h2 {
+            color: #4a3b32;
+            font-size: 2.25em;
+
+            @include m.tab {
+                font-size: 1.8em;
+            }
+
+            @include m.sp {
+                font-size: 1.5em;
+
+
+            }
+
+        }
+
+        h3 {
+            color: #4a3b32;
+            font-size: 2em;
+            text-align: center;
+            padding: 150px 0 50px;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 35%;
+                top: 70%;
+                width: 80px;
+                height: 2px;
+                background-color: #4a3b32;
+                transform: translateY(-50%);
+                
+                @include m.tab {
+                    left: 30%;
+                }
+                @include m.sp {
+                    top: 65%;
+                    width: 60px;
+                }
+                
+            }
+            
+            &::after {
+                content: "";
+                position: absolute;
+                left: 61%;
+                top: 70%;
+                width: 80px;
+                height: 2px;
+                background-color: #4a3b32;
+                transform: translateY(-50%);
+                @include m.tab {
+                    left: 65%;
+                }
+                @include m.sp {
+                    top: 65%;
+                    left: 63%;
+                    width: 60px;
+                }
+            }
+
+            @include m.tab {
+                font-size: 1.6em;
+                padding: 125px 0 50px;
+            }
+
+            @include m.sp {
+                font-size: 1.25em;
+                padding: 100px 0 50px;
+            }
+
+        }
+
+        h4 {
+            color: #4a3b32;
+            font-size: 1.5em;
+
+            @include m.tab {
+                font-size: 1.3em;
+
+            }
+
+            @include m.sp {
+                font-size: 1.125em;
+
+            }
+        }
+
+        p {
+            color: #4a3b32;
+            font-size: 1.125em;
+
+            @include m.tab {
+                font-size: 1em;
+            }
+
+            @include m.sp {
+                font-size: 0.9em;
+
+            }
+        }
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: #4a3b32;
+        font-size: 0.9em;
+
+        @include m.tab {
+            font-size: 0.8em;
+
+        }
+
+        @include m.sp {
+            font-size: 0.7em;
+
+        }
+    }
+
+}

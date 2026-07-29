@@ -1,0 +1,86 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+.enjoy {
+    // margin-bottom: 0px;
+    @include m.sp {
+        margin-bottom: 0px;
+
+    }
+
+    .enjoy-outer {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 100px;
+
+        .enjoy-left,
+        .enjoy-right {
+            width: 50%;
+
+            .enjoy-list {
+                width: 100%;
+                padding: 40px;
+                transition-duration: .4s;
+                @include m.sp {
+                    padding: 20px;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                .enjoy-item {
+                    position: relative;
+
+                    .enjoy-item-img {
+                        &::after {
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            background-color: rgba(140, 110, 85, 0.4);
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            border-radius: 100px;
+                        }
+
+                        img {
+                            border-radius: 100px;
+                        }
+                    }
+
+                    .enjoy-item-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: rgba(255, 255, 255, 0.4);
+                        padding: 10px;
+
+                        p {
+                            font-weight: bold;
+
+                        }
+                    }
+
+
+
+                }
+
+                .enjoy-item-text-exp {
+                    padding: 10px;
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .enjoy-right {
+            margin-top: 200px;
+        }
+    }
+}

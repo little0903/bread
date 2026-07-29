@@ -1,0 +1,84 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+.main-visual {
+    position: relative;
+    padding-top: 120px;
+
+    .main-visual-bg {
+        position: absolute;
+        width: 57%;
+        height: 90%;
+        top: -25%;
+        left: -10%;
+        background-color: rgba(237, 215, 174, 0.8);
+        border-radius: 61% 39% 55% 45% / 47% 52% 48% 53%;
+        animation: wave linear 10s infinite;
+        z-index: 10;
+    
+        @include m.tab {
+            width: 60%;
+            height: 90%;
+            top: -20%;
+            left: -10%;
+        }
+
+        @include m.sp {
+            // position: absolute;
+            width: 60%;
+            height: 90%;
+            top: -30%;
+            left: -5%;
+
+        }
+
+    }
+
+    .main-visual-text {
+        position: absolute;
+        top: 180px;
+        margin-left: 40px;
+        z-index: 20;
+
+        @include m.sp {
+            position: relative;
+            top: 0;
+        }
+    }
+
+
+    .main-visual-img {
+        text-align: right;
+        margin-top: 50px;
+
+        @include m.sp {
+            margin-top: 10px;
+
+        }
+
+        img {
+            border-top-left-radius: 500px;
+            max-width: 80%;
+            height: auto;
+            
+            @include m.sp {
+                border-top-left-radius: 200px;
+
+            }
+
+
+        }
+    }
+
+
+
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+}

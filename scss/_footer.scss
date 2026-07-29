@@ -1,0 +1,28 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+footer {
+    background-color: #7d6a4f;
+    text-align: center;
+    padding: 10px;
+    // height: 50px;
+    // .information-logo {
+    //     display: flex;
+    //     justify-content: space-around;
+    //     align-items: center;
+        
+    //     img {
+    //         width: 200px;
+    //         height: 80px;
+    //         object-fit: cover;
+    //         background-color: #F3EBE2;
+    //         border-radius: 100px;
+            
+    //     }
+
+    // }
+    small {
+
+        color: #F3EBE2;
+    }
+}
