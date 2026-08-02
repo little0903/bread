@@ -14,6 +14,11 @@
         }
         @include m.sp{
             grid-template-columns: repeat(2, 1fr);
+            
+        }
+        
+        @include m.ssp {
+            grid-template-columns: 1fr;
 
         }
 
@@ -28,6 +33,9 @@
 
                 img {
                     width: 80%;
+                    @include m.ssp {
+                        width: 70%;
+                    }
                 }
             }
 

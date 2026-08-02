@@ -2,6 +2,7 @@
 @use 'mixin' as m;
 
 .enjoy {
+
     // margin-bottom: 0px;
     @include m.sp {
         margin-bottom: 0px;
@@ -23,6 +24,7 @@
                 width: 100%;
                 padding: 40px;
                 transition-duration: .4s;
+
                 @include m.sp {
                     padding: 20px;
                 }
@@ -49,6 +51,11 @@
                         img {
                             border-radius: 100px;
                         }
+
+                        @include m.ssp {
+                            padding: 20px;
+                        }
+
                     }
 
                     .enjoy-item-text {
@@ -77,10 +84,26 @@
                     }
                 }
             }
+
+            @include m.ssp {
+                width: 100%;
+            }
+
         }
 
         .enjoy-right {
             margin-top: 200px;
+
+            @include m.ssp {
+                margin-top: 0px;
+            }
+
         }
+
+        @include m.ssp {
+            flex-direction: column;
+        }
+
+
     }
 }

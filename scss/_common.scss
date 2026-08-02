@@ -12,6 +12,13 @@ body {
     z-index: -1;
     font-size: 16px;
 
+    @include m.ssp {
+        background-size: contain;
+        background-position: center;
+        // background-attachment: scroll;
+
+    }
+
     .wrapper {
         max-width: 1440px;
         margin: 0 auto;
@@ -37,8 +44,10 @@ body {
 
             @include m.sp {
                 font-size: 1.5em;
+            }
 
-
+            @include m.ssp {
+                font-size: 1.2em;
             }
 
         }
@@ -59,17 +68,24 @@ body {
                 height: 2px;
                 background-color: #4a3b32;
                 transform: translateY(-50%);
-                
+
                 @include m.tab {
                     left: 30%;
                 }
+
                 @include m.sp {
                     top: 65%;
                     width: 60px;
                 }
-                
+
+                @include m.ssp {
+                    left: 18%;
+                    width: 50px;
+                    height: 1px;
+                }
+
             }
-            
+
             &::after {
                 content: "";
                 position: absolute;
@@ -79,14 +95,24 @@ body {
                 height: 2px;
                 background-color: #4a3b32;
                 transform: translateY(-50%);
+
                 @include m.tab {
                     left: 65%;
                 }
+
                 @include m.sp {
                     top: 65%;
                     left: 63%;
                     width: 60px;
                 }
+
+                @include m.ssp {
+                    left: 70%;
+                    width: 50px;
+                    height: 1px;
+
+                }
+
             }
 
             @include m.tab {
@@ -98,6 +124,11 @@ body {
                 font-size: 1.25em;
                 padding: 100px 0 50px;
             }
+            
+            @include m.ssp {
+                font-size: 1em;
+            }
+
 
         }
 
@@ -114,6 +145,10 @@ body {
                 font-size: 1.125em;
 
             }
+
+            @include m.ssp {
+                font-size: 0.9em;
+            }
         }
 
         p {
@@ -127,6 +162,11 @@ body {
             @include m.sp {
                 font-size: 0.9em;
 
+            }
+
+            @include m.ssp {
+                font-size: 0.75em;
+                
             }
         }
     }
@@ -145,6 +185,10 @@ body {
         @include m.sp {
             font-size: 0.7em;
 
+        }
+
+        @include m.ssp {
+            font-size: 0.6em;
         }
     }
 

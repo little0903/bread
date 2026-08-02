@@ -45,6 +45,9 @@
 
                 align-items: center;
             }
+            @include m.ssp {
+                border-radius: 30px;
+            }
             
             
             .commitment-text {
@@ -53,10 +56,17 @@
                 }
                 h4 {
                     padding: 30px 0;
+                    @include m.ssp {
+                        padding: 15px 0;
+                    }
                 }
-
+                
+                
                 p {
                     padding: 20px;
+                    @include m.ssp {
+                        padding: 15px 0;
+                    }
                 }
             }
 
@@ -69,6 +79,9 @@
 
                 @include m.sp {
                     margin: 30px;
+                }
+                @include m.ssp {
+                    margin: 15px;
 
                 }
 
@@ -76,11 +89,10 @@
 
                 .commitment-img-bg {
                     padding: 20px;
-
+                    
                     img {
                         max-width: 80%;
-                    }
-
+                    }    
                 }
             }
         }

@@ -4,6 +4,10 @@
 .main-visual {
     position: relative;
     padding-top: 120px;
+    @include m.ssp {
+        padding-top: 100px;
+
+    }
 
     .main-visual-bg {
         position: absolute;
@@ -15,7 +19,7 @@
         border-radius: 61% 39% 55% 45% / 47% 52% 48% 53%;
         animation: wave linear 10s infinite;
         z-index: 10;
-    
+
         @include m.tab {
             width: 60%;
             height: 90%;
@@ -24,12 +28,15 @@
         }
 
         @include m.sp {
-            // position: absolute;
-            width: 60%;
+            top: -30%;
+            left: -5%;
+            
+        }
+        @include m.ssp {
+            width: 90%;
             height: 90%;
             top: -30%;
             left: -5%;
-
         }
 
     }
@@ -60,9 +67,15 @@
             border-top-left-radius: 500px;
             max-width: 80%;
             height: auto;
-            
+
             @include m.sp {
                 border-top-left-radius: 200px;
+
+            }
+
+            @include m.ssp {
+                border-top-left-radius: 150px;
+                max-width: 90%;
 
             }
 
@@ -72,13 +85,13 @@
 
 
 
-@keyframes wave {
-    from {
-        transform: rotate(0deg);
-    }
+    @keyframes wave {
+        from {
+            transform: rotate(0deg);
+        }
 
-    to {
-        transform: rotate(360deg);
+        to {
+            transform: rotate(360deg);
+        }
     }
-}
 }

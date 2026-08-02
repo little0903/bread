@@ -13,3 +13,11 @@ $sp: 768px;
         @content;
     }
 }
+
+$ssp: 400px;
+
+@mixin ssp {
+    @media (max-width: $ssp) {
+        @content;
+    }
+}
