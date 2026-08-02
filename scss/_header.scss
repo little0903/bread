@@ -31,6 +31,7 @@ header {
                     width: 200px;
                     height: 80px;
                     object-fit: cover;
+
                     @include m.ssp {
                         width: 150px;
                         height: 80px;
@@ -42,9 +43,9 @@ header {
 
             .header-nav {
                 display: none;
-                
+
             }
-            
+
             .header-nav-sp {
                 @include m.sp {
                     display: none;
@@ -200,39 +201,39 @@ header.open {
 
 
         }
-    }
 
-    .toggle-btn {
-        span {
-            &:nth-child(1) {
-                top: 50%;
-                transform: rotate(45deg);
-                background-color: #fff;
-            }
+        .toggle-btn {
+            span {
+                &:nth-child(1) {
+                    top: 50%;
+                    transform: rotate(45deg);
+                    background-color: #fff;
+                }
 
-            &:nth-child(2) {
-                opacity: 0;
-            }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
 
-            &:nth-child(3) {
-                top: 50%;
-                transform: rotate(-45deg);
-                background-color: #fff;
+                &:nth-child(3) {
+                    top: 50%;
+                    transform: rotate(-45deg);
+                    background-color: #fff;
+                }
+
             }
+        }
+
+        .mask {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: rgba(62, 51, 44, 0.7);
 
         }
-    }
-
-    .mask {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background-color: rgba(62, 51, 44, 0.7);
-
     }
 
 }

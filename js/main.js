@@ -15,7 +15,7 @@ $(function () {
         $("header").removeClass("open");
     });
 
-    $("#nav a").on("click", function () {
+    $(".header-nav-sp a").on("click", function () {
         $("header").removeClass("open");
     });
 

@@ -9,7 +9,6 @@ body {
 @media (max-width: 400px) {
   body {
     background-size: contain;
-    background-position: center;
   }
 }
 body .wrapper {
@@ -326,20 +325,20 @@ header .wrapper .header-list .header-nav-sp ul li.nav-btn-4:hover {
     margin-bottom: 20px;
   }
 }
-header.open .toggle-btn span:nth-child(1) {
+header.open .wrapper .toggle-btn span:nth-child(1) {
   top: 50%;
   transform: rotate(45deg);
   background-color: #fff;
 }
-header.open .toggle-btn span:nth-child(2) {
+header.open .wrapper .toggle-btn span:nth-child(2) {
   opacity: 0;
 }
-header.open .toggle-btn span:nth-child(3) {
+header.open .wrapper .toggle-btn span:nth-child(3) {
   top: 50%;
   transform: rotate(-45deg);
   background-color: #fff;
 }
-header.open .mask {
+header.open .wrapper .mask {
   display: block;
   position: fixed;
   top: 0;
