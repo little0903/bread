@@ -6,6 +6,11 @@ body {
   z-index: -1;
   font-size: 16px;
 }
+@media (max-width: 400px) {
+  body {
+    background-image: url(../img/bg-ssp.webp);
+  }
+}
 body .wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -269,14 +274,14 @@ header .wrapper .header-list .header-nav-sp ul li.nav-btn-4:hover {
   background-color: #F3EBE2;
 }
 @media (max-width: 768px) {
-  header .wrapper .header-list .toggle-btn {
+  header .wrapper .toggle-btn {
     width: 30px;
     height: 30px;
     position: relative;
     z-index: 300;
     transition: all 0.5s;
   }
-  header .wrapper .header-list .toggle-btn span {
+  header .wrapper .toggle-btn span {
     width: 100%;
     height: 2px;
     background-color: #333;
@@ -284,22 +289,23 @@ header .wrapper .header-list .header-nav-sp ul li.nav-btn-4:hover {
     transition: all 0.5s;
     left: 25%;
   }
-  header .wrapper .header-list .toggle-btn span:nth-child(1) {
+  header .wrapper .toggle-btn span:nth-child(1) {
     top: 25%;
   }
-  header .wrapper .header-list .toggle-btn span:nth-child(2) {
+  header .wrapper .toggle-btn span:nth-child(2) {
     top: 50%;
   }
-  header .wrapper .header-list .toggle-btn span:nth-child(3) {
+  header .wrapper .toggle-btn span:nth-child(3) {
     top: 75%;
   }
-  header .wrapper .header-list .mask {
+  header .wrapper .mask {
     display: none;
     transition: all 0.5s;
   }
 }
+
 @media (max-width: 768px) {
-  header header.open .wrapper .header-list .header-nav-sp {
+  header.open .wrapper .header-list .header-nav-sp {
     display: block;
     position: fixed;
     top: 100px;
@@ -309,28 +315,28 @@ header .wrapper .header-list .header-nav-sp ul li.nav-btn-4:hover {
   }
 }
 @media (max-width: 768px) {
-  header header.open .wrapper .header-list .header-nav-sp ul {
+  header.open .wrapper .header-list .header-nav-sp ul {
     flex-direction: column;
     align-items: center;
   }
 }
 @media (max-width: 768px) {
-  header header.open .wrapper .header-list .header-nav-sp ul li {
+  header.open .wrapper .header-list .header-nav-sp ul li {
     margin-bottom: 20px;
   }
 }
-header header.open .wrapper .toggle-btn span:nth-child(1) {
+header.open .wrapper .toggle-btn span:nth-child(1) {
   top: 50%;
   transform: rotate(45deg);
 }
-header header.open .wrapper .toggle-btn span:nth-child(2) {
+header.open .wrapper .toggle-btn span:nth-child(2) {
   opacity: 0;
 }
-header header.open .wrapper .toggle-btn span:nth-child(3) {
+header.open .wrapper .toggle-btn span:nth-child(3) {
   top: 50%;
   transform: rotate(-45deg);
 }
-header header.open .wrapper .mask {
+header.open .wrapper .mask {
   display: block;
   position: fixed;
   top: 0;
