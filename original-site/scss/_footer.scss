@@ -1,0 +1,12 @@
+@use 'variables' as v;
+@use 'mixin' as m;
+
+footer {
+    background-color: #7d6a4f;
+    text-align: center;
+    padding: 10px;
+    small {
+
+        color: #F3EBE2;
+    }
+}
