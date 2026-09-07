@@ -8,7 +8,11 @@ body {
 }
 @media (max-width: 400px) {
   body {
-    background-size: contain;
+    background-image: url(../img/bg-ssp.webp);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
   }
 }
 body .wrapper {
@@ -308,7 +312,7 @@ header .wrapper .header-list .header-nav-sp ul li.nav-btn-4:hover {
   header.open .wrapper .header-list .header-nav-sp {
     display: block;
     position: fixed;
-    top: 0;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     padding-top: 20px;
@@ -328,7 +332,6 @@ header .wrapper .header-list .header-nav-sp ul li.nav-btn-4:hover {
 header.open .wrapper .toggle-btn span:nth-child(1) {
   top: 50%;
   transform: rotate(45deg);
-  background-color: #fff;
 }
 header.open .wrapper .toggle-btn span:nth-child(2) {
   opacity: 0;
@@ -336,7 +339,6 @@ header.open .wrapper .toggle-btn span:nth-child(2) {
 header.open .wrapper .toggle-btn span:nth-child(3) {
   top: 50%;
   transform: rotate(-45deg);
-  background-color: #fff;
 }
 header.open .wrapper .mask {
   display: block;
@@ -346,7 +348,7 @@ header.open .wrapper .mask {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(62, 51, 44, 0.7);
+  background-color: rgba(245, 241, 228, 0.8);
 }
 
 .main-visual {

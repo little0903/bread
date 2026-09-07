@@ -2,8 +2,6 @@
 @use 'mixin' as m;
 
 .enjoy {
-
-    // margin-bottom: 0px;
     @include m.sp {
         margin-bottom: 0px;
 

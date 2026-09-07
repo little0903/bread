@@ -11,11 +11,14 @@ body {
     font-size: 16px;
 
     @include m.ssp {
-        background-size: contain;
-        // background-position: center;
-        // background-attachment: scroll;
-
+        background-image: url(../img/bg-ssp.webp);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
     }
+
+
 
     .wrapper {
         max-width: 1440px;
@@ -122,7 +125,7 @@ body {
                 font-size: 1.25em;
                 padding: 100px 0 50px;
             }
-            
+
             @include m.ssp {
                 font-size: 1em;
             }
@@ -164,7 +167,7 @@ body {
 
             @include m.ssp {
                 font-size: 0.75em;
-                
+
             }
         }
     }
