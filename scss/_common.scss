@@ -9,13 +9,28 @@ body {
     background-attachment: fixed;
     z-index: -1;
     font-size: 16px;
-
+    position: relative;
+    
+    
     @include m.ssp {
-        background-image: url(../img/bg-ssp.webp);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
+        &::before {
+            content:"";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vh;
+            height: 100vh;
+            background-image: url(../img/bg-ssp.webp);
+            // background-image: url(../img/bg.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: -1;
+        }
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        // z-index: 10;
     }
 
 
